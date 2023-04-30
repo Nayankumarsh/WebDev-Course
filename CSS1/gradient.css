@@ -1,0 +1,17 @@
+#box{
+    border:1px solid black;
+    height: 200px;
+    width:250px;
+    background-image: linear-gradient(red,blue);
+    background-image: linear-gradient(to top, red,blue);
+    background-image: linear-gradient(to top right, red,blue);
+    position:sticky;
+    top: 15px;
+}
+#n{
+    position: absolute;
+    top: 100px;
+    height: 1000px;
+    width: 1000px;
+    background-color: yellow;
+}
