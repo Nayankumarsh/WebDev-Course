@@ -1,10 +1,11 @@
-function init() {
-    let name = "Mozilla"; 
-    function displayName() {
-      // displayName() is the inner function, that forms the closure
-      console.log(name); // use variable declared in the parent function
-    }
-    return displayName;
+let myDiv = document .createElement("Div");
+function newe(event){
+    console.log("chal raha he" + event.target.textContent);
 }
-let a = init();
-a();
+myDiv.addEventListener("click",newe);
+for(let i=1;i<=100;i++){
+    let newElement = document.createElement("p");
+    newElement.textContent = "This is para " + i;
+    myDiv.appendChild(newElement);
+}
+document.body.appendChild(myDiv);
